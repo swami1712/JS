@@ -1,6 +1,6 @@
 const obj = {
-    "firstname": true,
-    "last_name": false
+    firstName: 'swami',
+    lastName: 'mahale'
 }
 
-console.log(obj[firstname])
+console.log(obj['firstName'])

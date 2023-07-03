@@ -1,4 +1,4 @@
-//callback is function called within another function
+//callback is a function called within another function
 //simplified explanation of callbacks -->
 
 
@@ -6,8 +6,8 @@ const addh1 = (content, callback) => {
     let h1 = document.createElement("h1")
     h1.innerHTML = content
 
-    h1.onerror = (error) => {
-        console.log("there is an error " + error)
+    h1.onerror = () => {
+        console.log("there is an error ")
     }
     document.body.appendChild(h1);
     callback();
@@ -25,8 +25,8 @@ const loadScript = (src, callback) => {
     scrip.onload = () => {
         console.log("loaded")
     }
-    scrip.onerror = (error) => {
-        console.log("Sorry, there is an error! " + error)
+    scrip.onerror = () => {
+        console.log("Sorry, there is an error! ")
     }
 
 

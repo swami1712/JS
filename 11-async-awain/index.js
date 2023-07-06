@@ -20,7 +20,7 @@ const understandAsyncAwait = async () => {
     return [dw, bw];
 }
 
-
+//you can'nt use '.then' for normal function as it can only be used with promise
 understandAsyncAwait().then((value) => {
     console.log(value)
 });
